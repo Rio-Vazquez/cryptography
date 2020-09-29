@@ -196,11 +196,6 @@ def decrypt_mhkc(ciphertext, private_key):
     return solution
 
 def main():
-    output = generate_private_key()
-    newoutput= create_public_key(output)
-    nextoutput = encrypt_mhkc("zzzzzzzz", newoutput)
-    finaloutput = decrypt_mhkc(nextoutput, output)
-    print(finaloutput)
     
 
 if __name__ == "__main__":
